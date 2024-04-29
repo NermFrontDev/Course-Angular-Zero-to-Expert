@@ -15,4 +15,10 @@ export class ListComponent {
     'Thor'
   ]
 
+  public deledtedHero?: string;
+
+  removeLastHeroe(): void {
+    this.deledtedHero = this.heroListName.pop();
+  }
+
 }
