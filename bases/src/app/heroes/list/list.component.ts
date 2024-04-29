@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
 
+  public heroListName: string [] = [
+    'Spiderman',
+    'Ironman',
+    'Hulk',
+    'She Hulk',
+    'Thor'
+  ]
+
 }
