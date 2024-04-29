@@ -8,7 +8,8 @@
     let isLast = last;
     let isEven = even;
     let isOdd = odd"
-    class="list-group-item">
+    class="list-group-item"
+    [ngClass]="{ 'list-group-item-secondary': isEven }">
 
     <span class="text-primary">{{ i + 1 }}. </span>
 
