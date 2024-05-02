@@ -45,7 +45,7 @@ export class GifsService {
     .subscribe( res => {
 
       this.gifsList = res.data;
-      console.log({ gifs: this.gifsList });
+      // console.log({ gifs: this.gifsList });
     } )
 
 
