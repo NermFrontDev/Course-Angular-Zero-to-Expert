@@ -7,7 +7,7 @@ import { Gif } from '../../interfaces/gifs.interfaces';
   templateUrl: './gifs-card.component.html',
   styleUrls: ['./gifs-card.component.css']
 })
-export class GifsCardComponent implements OnInit {
+export class CardComponent implements OnInit {
 
   constructor( ){ }
 
