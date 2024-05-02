@@ -26,10 +26,15 @@ export class GifsService {
     this._tagsHistory.unshift( tag );
     // Se delimita que muestre solo 10
     this._tagsHistory = this.tagsHistory.splice( 0, 10 );
+    this.saveLocalStorage();
   }
 
   get tagsHistory() {
     return [ ...this._tagsHistory ];
+  }
+
+  private saveLocalStorage ():void {
+    localStorage.setItem ('History', JSON.stringify(this._tagsHistory));
   }
 
   searchTag ( tag:string ):void {
