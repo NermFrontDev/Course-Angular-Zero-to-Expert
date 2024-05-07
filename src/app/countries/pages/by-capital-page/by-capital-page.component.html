@@ -14,12 +14,13 @@
 <div class="row">
   <div class="col">
     <hr>
-    <ul class="list-group">
+    <countries-table [countries]="countries"></countries-table>
+    <!-- <ul class="list-group">
       <li
         *ngFor="let country of countries"
         class="list-group-item">
         {{ country.capital }} - {{ country.name.common }}
       </li>
-    </ul>
+    </ul> -->
   </div>
 </div>
